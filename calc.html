@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="calc.css">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+
+<body class="body">
+
+    <header>
+        <div class="header">
+            CALCULATOR
+        </div>
+    </header>
+
+    <div class="cal-container">
+
+        <div class="display">
+            <div id="display-screen"></div>
+        </div>
+
+        <div class="buttons">
+            <button onclick="clearDisplay()">AC</button>
+            <button onclick="updateDisplay('Del')">Del</button>
+            <button onclick="updateDisplay('%')">%</button>
+            <button onclick="updateDisplay('+')">+</button>
+            <button onclick="updateDisplay(7)">7</button>
+            <button onclick="updateDisplay(8)">8</button>
+            <button onclick="updateDisplay(9)">9</button>
+            <button onclick="updateDisplay('-')">-</button>
+            <button onclick="updateDisplay(4)">4</button>
+            <button onclick="updateDisplay(5)">5</button>
+            <button onclick="updateDisplay(6)">6</button>
+            <button onclick="updateDisplay('*')">*</button>
+            <button onclick="updateDisplay(1)">1</button>
+            <button onclick="updateDisplay(2)">2</button>
+            <button onclick="updateDisplay(3)">3</button>
+            <button onclick="updateDisplay('/')">/</button>
+            <button onclick="updateDisplay('00')">00</button>
+            <button onclick="updateDisplay(0)">0</button>
+            <button onclick="updateDisplay('.')">.</button>
+            <button onclick="handleEquals()">=</button> <!-- Updated this line -->
+        </div>
+
+    </div>
+
+    <script src="calc.js"></script>
+</body>
+
+</html>

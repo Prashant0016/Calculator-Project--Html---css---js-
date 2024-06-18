@@ -1,0 +1,100 @@
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: lawngreen;
+    height: 55px;
+    width: 100%;
+    font-family: montserrat,sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    position: fixed;
+    z-index: 100;
+    top: 0;
+    left: 0;
+    right: 0;
+}
+
+.body {
+    margin: 0;
+    padding-top: 150px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(245, 245, 220);
+}
+
+.cal-container {
+    border: solid 5px rgb(0, 0, 0);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 400px;
+    width: 450px;
+}
+
+.display {
+    background-color: rgb(255, 204, 0);
+    height: 90px;
+    width: 100%;
+    border: solid 2px white;
+    position: relative;
+}
+
+.display div{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+    font-size: 34px;
+    font-family: montserrat,sans-serif;
+    font-weight: 400;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+
+.buttons {
+    background-color: rgb(255, 204, 0);
+    height: 310px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows:  1fr 1fr 1fr 1fr 1fr;
+}
+
+.buttons button{
+    border-radius: 10%;
+    font-size: 25px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-family: montserrat,sans-serif;
+}
+
+@media (min-width : 360px) and (max-width : 466px) {
+    .cal-container{
+        width: 95%;
+    } 
+}
+@media (min-width : 332px) and (max-width : 359px) {
+    .cal-container{
+        width: 95%;
+    } 
+    .display div{
+        font-size: 33px;
+    }
+}
+@media (max-width : 332px) {
+    .cal-container{
+        width: 85%;
+    } 
+    .display div{
+        font-size: 25px;
+    }
+    .header{
+        font-size: 25px;
+    }
+}
